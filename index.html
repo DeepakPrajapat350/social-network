@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Friend'em</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="w3.css">
+        <style>
+            header div form input[type='text/password']{ width: 200px;height: 30px;margin: 5px;border: 1px solid red;border-radius: 5px;}
+            body div form input{ height: 30px;margin: 5px;border: 1px solid red;border-radius: 5px;}
+            body div form input[type='radio']{ width:40px;height: 20px;margin: 5px;border: 1px solid red;border-radius: 5px;}
+            #create{ width:200px;height: 40px;padding: 5px;margin-top: 10px;border: 1px solid red;border-radius: 5px;}
+            #label1,#label2{
+                margin-bottom: 20px;color: #761c19;margin-right: 20px;font-size: 18px;
+            }
+            #input1,#input2{
+                height: 30px;width: 250px;margin-bottom: 20px;border: 2px solid purple;border-radius: 5px;
+            }
+            #btn3{
+                margin-left: 200px;width: 150px;height: 40px;
+            }
+            #forgot{
+              margin-top: 50px;margin-right: 170px;text-decoration: none;color: #a6e1ec  ;
+            }
+            #title{
+               font-family: Times New Roman;text-height: 20px;float: left; margin-left: 50px;font-style: oblique 
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="w3-container" style="background:#35424a;border-bottom: #e8491d 2px solid;color: white">
+                <h1 id="title"><i class="fa fa-facebook-square" style=" margin-right: 10px;"></i><strong>Friend'em</strong></h1>
+                <form action="login.jsp" method="post" class="w3-form w3-right" style="margin-top: 15px; margin-right: 20px;">
+                <span style="font-size: 16px;font-weight: bold">Username : </span><input type="text" name="username" placeholder="username" required>
+                <span style="font-size: 16px;font-weight: bold">Password : </span><input type="password" name="password" placeholder="password" required>
+                <input type="submit" value="Login" class="w3-btn w3-deep-orange w3-border-0 w3-padding-small w3-text-white">
+            </form>
+                <a href="#" onclick="document.getElementById('id1').style.display='block'" class="w3-display-topright w3-hover-text-red" id="forgot">Forgot Password?</a>
+            </div>
+        </header>
+        <div class="w3-container" style="background-image: url('pic/pic50.jpg');height: 700px;background-repeat:no-repeat;background-size: 100% 100%;">
+            <form action="signup.jsp" method="post" class="w3-form w3-transparent w3-right" style="margin-right: 100px;color: white;">
+
+                <h1>SignUp</h1>
+                    <h2>Informaion</h2>
+                    <input type="text" name="fname" placeholder="First Name" style="width: 147px;" required>
+                    <input type="text" name="lname" placeholder="Last Name" style="width: 147px;" required><br>
+                    <input type="text" name="mno" placeholder="Enter Your Mobile No." style="width: 309px;" required><br>
+                    <input type="email" name="email" placeholder="Enter Your Email." style="width: 309px;" required><br>
+                    <input type="text" name="uname" placeholder="Enter Your User Name." style="width: 309px;" required ><br>
+                    <input type="password" name="pwd" placeholder="Enter a password." style="width: 309px;" required><br>
+                    Date Of Birth : <br>
+                    <input type="date" name="dob" style="width: 309px;" required><br>
+                    Gender : <br>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female 
+                    <input type="radio" name="gender" value="others">Others<br>
+                    <input type="submit" class="w3-btn w3-deep-orange" value="Create Account" id="create">
+            </form>
+        </div>
+        <div id="id1" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container w3-black">
+                    <span onclick="document.getElementById('id1').style.display='none'" class="w3-button w3-red w3-display-topright">&times;</span>
+                    <h1 class="w3-center">Forgot Password :</h1>
+                    <form action="forgotpassword.jsp" method="post" style="height: 300px;width: 500px; margin-left: 200px; margin-top: 100px;">
+                        <label id="label1" >Enter Your Username: </label><input id="input1" type="text" name="uname" placeholder="Username"><br>
+                        <label id="label2" >Enter Your Email: </label><input type="text" id="input2" name="email" placeholder="Email" style="margin-left: 47px;"><br>
+                        <input id="btn3" type="submit" value="Confirm" class="w3-btn w3-round-large w3-grey w3-hover-purple">
+                    </form>
+                </div>
+            </div>
+        </div> 
+        
+        <footer class="w3-container" style="background:#35424a;border-top: #e8491d 2px solid">
+            <div style="margin-left: 50px;color: white"><h4>Devil Corporation copyright &copy; 2017</h4>
+                <address>
+                    Designed And Maintained '5By Deepak Prajapat<br>
+                    Student At<br>
+                    AIACTR New Delhi.
+                </address></div>
+        </footer>
+    </body>
+</html>

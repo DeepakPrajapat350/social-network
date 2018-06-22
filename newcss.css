@@ -1,0 +1,106 @@
+body{
+    font: 15px/1.5 Times New Roman, Hevetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: lightcyan;
+}
+#container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+header{
+    background-image: url("pic/pic1.jpeg");
+    padding-top: 30px;
+    min-height: 70px ;
+}
+header #container form{
+    float: right;
+    margin-top: 10px;
+}
+header #container h1{
+    float: left;
+    margin: 0;
+    margin-bottom: 20px;
+}
+section{
+     background: url('pic/pic3.jpeg') no-repeat 0; 
+    min-height: 600px;
+    margin: auto;
+}
+
+section #signup form{
+    float:right;
+    padding: 4px;
+    margin-right: 200px;
+    color: white;
+    text-height: 20px;
+}
+#signup input[type="text"]{
+    padding: 4px;
+    height: 25px;
+    width: 145px;
+    border: 2px solid #ADFF2F ;
+    border-radius: 5px;
+}
+#signup input[name="mno"]{
+     padding: 4px;
+    height: 25px;
+    width: 315px;
+    border: 2px solid #ADFF2F ;
+    border-radius: 5px;
+}
+#signup input[name="uname"]{
+     padding: 4px;
+    height: 25px;
+    width: 315px;
+    border: 2px solid #ADFF2F ;
+    border-radius: 5px;
+}
+#signup input[type="password"]{
+    padding: 4px;
+    height: 25px;
+    width: 315px;
+    border: 2px solid #ADFF2F ;
+    border-radius: 5px;
+}
+#signup input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 315px;
+    border: 2px solid #ADFF2F ;
+    border-radius: 5px;
+}
+#signup input[type="date"]{
+    padding: 4px;
+    height: 25px;
+    width: 200px;
+    border: 2px solid #00BFFF ;
+    border-radius: 5px;
+}
+#signup input[type="radio"]{
+    padding: 4px;
+    height: 15px;
+    width: 50px;
+    border: 2px solid #00BFFF ;
+    border-radius: 5px;
+}
+#signup input{
+    margin: 5px;
+}
+#signup input[type="submit"]{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: #00cc44;
+    border: 2px solid #9966ff;
+    border-style: outset;
+    border-radius: 5px;
+}
+footer{
+    background-color: #ffffcc;
+    padding-top: 30px;
+    min-height: 70px ;
+}
